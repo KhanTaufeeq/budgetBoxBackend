@@ -92,11 +92,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': str(BASE_DIR / 'db.sqlite3'),
-    # }
-    "default": dj_database_url.parse("postgres://budget_box_user:zumau2vRzsvfPjKu9mZriwt5lGeWGOwi@dpg-cn8p788l5elc738uq800-a.oregon-postgres.render.com/budget_box")
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
+    #"default": dj_database_url.parse("postgres://budget_box_user:zumau2vRzsvfPjKu9mZriwt5lGeWGOwi@dpg-cn8p788l5elc738uq800-a.oregon-postgres.render.com/budget_box")
 }
 # django_heroku.settings(locals())
 
